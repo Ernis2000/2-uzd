@@ -1,7 +1,9 @@
 # spartos matavimas naudojant deque vietoj vector
 
 CPU: intel core i5-8250u cpu @ 1.60Hz
+
 Ram: 8 gb
+
 SSD
 
 Spartos testai ir laikų pasikeitimai:
