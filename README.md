@@ -1,26 +1,26 @@
 # Studentai
 
-#v0.1 versija
+v0.1 versija
 
 Ši versija skaičiuoja vidurkį arba medianą pagal įvestus duomenis arba atsitiktinius duomenis
 
-#v0.2 versija
+v0.2 versija
 
 Ši versija leidžia pasirinkti jei norite skaityti duomenis iš failo
 
-#v0.3 versija
+v0.3 versija
 
 Šioje dalyje yra naudojamas header failas ir papildomas cpp failas funkcijom
 
-#v0.4 versija
+v0.4 versija
 
 Ši programos versija gali sukurti studentų duomenų failą, šio failo įrašų ir namų darbu kiekį gali pasirinkti vartotojas. Taip pat programa surušiuoja studentus į dvi kategorijas pagal vidurkius: liūdesėliai - studentai kurių galutinis balas yra mažiau nei penki, neliūdesėliai - studentai, kurių galutinis balas yra penki arba daugiau.
 
-#v0.5 versija
+v0.5 versija
 
 Šioje versijoje buvo atlikti spartos testai naudojant deque vietoj vector
 
-#v1.0 versija
+v1.0 versija
 
 Optimizuoti studentų rūšiavimo būdai ir padaryti spartos testai
 
