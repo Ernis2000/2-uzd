@@ -1,31 +1,72 @@
-# spartos matavimas naudojant deque vietoj vector
+# Studentai
 
-CPU: intel core i5-8250u cpu @ 1.60Hz
+##v0.1 versija
 
-Ram: 8 gb
+Ši versija skaičiuoja vidurkį arba medianą pagal įvestus duomenis arba atsitiktinius duomenis
 
-SSD
+##v0.2 versija
 
-Spartos testai ir laikų pasikeitimai:
+Ši versija leidžia pasirinkti jei norite skaityti duomenis iš failo
 
-Failo iš 1000 įrašų sūkurimo laikas: 0,01666s->0,29924s
+##v0.3 versija
 
-1000 įrašų nuskaitymo, rezultatų suskaičiavimo, surūšiavimo ir išvedimo laikas: 0,03129s->0,032948s
+Šioje dalyje yra naudojamas header failas ir papildomas cpp failas funkcijom
 
-Failo iš 10000 įrašų sūkurimo laikas: 0,087343s->0,074836s
+##v0.4 versija
 
-10000 įrašų nuskaitymo, rezultatų suskaičiavimo, surūšiavimo ir išvedimo laikas: 0,109392s->0,127812
+Ši programos versija gali sukurti studentų duomenų failą, šio failo įrašų ir namų darbu kiekį gali pasirinkti vartotojas. Taip pat programa surušiuoja studentus į dvi kategorijas pagal vidurkius: liūdesėliai - studentai kurių galutinis balas yra mažiau nei penki, neliūdesėliai - studentai, kurių galutinis balas yra penki arba daugiau.
 
-Failo iš 100000 įrašų sūkurimo laikas: 0,665453s->0,655993s
+##v0.5 versija
 
-100000 įrašų nuskaitymo, rezultatų suskaičiavimo, surūšiavimo ir išvedimo laikas: 1,08351s->1,10279s
+Šioje versijoje buvo atlikti spartos testai naudojant deque vietoj vector
 
-Failo iš 1000000 įrašų sūkurimo laikas: 6,62514s->6,5674s
+##v1.0 versija
 
-1000000 įrašų nuskaitymo, rezultatų suskaičiavimo, surūšiavimo ir išvedimo laikas: 10,8141s->10,9008s
+Optimizuoti studentų rūšiavimo būdai ir padaryti spartos testai
 
-Failo iš 10000000 įrašų sūkurimo laikas: 65,5402s->65,4218s
+1 būdas:
+vector:
+failo iš 1000 įrašų nuskaitymo laikas: 0s
+1000 studentų suskirstymo laikas: 0,266852 s
 
-10000000 įrašų nuskaitymo, rezultatų suskaičiavimo, surūšiavimo ir išvedimo laikas: 104,69s->106,398s
+failo iš 5000 įrašų nuskaitymo laikas:0,04s
+5000 studentų suskirstymo laikas:7,12821s
 
+failo iš 10000 įrašų nuskaitymo laikas:0,09s
+10000 studentų suskirstymo laikas:31,7606s
+
+deque:
+failo iš 1000 įrašų nuskaitymo laikas: 0,01s
+1000 studentų suskirstymo laikas: 0,359252 s
+
+failo iš 5000 įrašų nuskaitymo laikas:0,0468s
+5000 studentų suskirstymo laikas:9,6220s
+
+failo iš 10000 įrašų nuskaitymo laikas:0,09373s
+10000 studentų suskirstymo laikas:40,0684s
+
+2 būdas:
+vector:
+failo iš 1000 įrašų nuskaitymo laikas: 0,009s
+1000 studentų suskirstymo laikas: 0,266852 s
+
+failo iš 5000 įrašų nuskaitymo laikas:0,04s
+5000 studentų suskirstymo laikas:5,41318s
+
+failo iš 10000 įrašų nuskaitymo laikas:0,09s
+10000 studentų suskirstymo laikas:24,3311s
+
+deque:
+failo iš 1000 įrašų nuskaitymo laikas: 0.01s
+1000 studentų suskirstymo laikas: 0,266348 s
+
+failo iš 5000 įrašų nuskaitymo laikas:0,0468s
+5000 studentų suskirstymo laikas:7,77119s
+
+failo iš 10000 įrašų nuskaitymo laikas:0,09373s
+10000 studentų suskirstymo laikas:28,2255s
+
+Naudojimosi instrukcija:
+
+Paleidus programą įrašyti 0 jei norite naudoti vidurkį skaičiavimuose arba 1 jei norite naudoti medianą skaičiavimuose, tada įrašyti studentų įrašų skaičių, po to namų darbų kiekį.
 
