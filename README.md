@@ -6,26 +6,26 @@ Ram: 8 gb
 
 SSD
 
-Spartos testai ir laikų pasikeitimai:
+# Spartos testai:
 
-Failo iš 1000 įrašų sūkurimo laikas: 0,01666s->0,29924s
+Vector:
 
-1000 įrašų nuskaitymo, rezultatų suskaičiavimo, surūšiavimo ir išvedimo laikas: 0,03129s->0,032948s
+| Įrašų kiekis | Skaitymas | Skirstymas |
+|:------------ |:--------- |:---------- |
+|1000          |0,015622   |0           |
+|10000         |0,125018   |0,015621    |
+|100000        |1,24181    |0,09373     |
+|1000000       |11,8399    |0,95294     |
+|10000000      |Neužteko atminties      |
 
-Failo iš 10000 įrašų sūkurimo laikas: 0,087343s->0,074836s
+Deque:
 
-10000 įrašų nuskaitymo, rezultatų suskaičiavimo, surūšiavimo ir išvedimo laikas: 0,109392s->0,127812
-
-Failo iš 100000 įrašų sūkurimo laikas: 0,665453s->0,655993s
-
-100000 įrašų nuskaitymo, rezultatų suskaičiavimo, surūšiavimo ir išvedimo laikas: 1,08351s->1,10279s
-
-Failo iš 1000000 įrašų sūkurimo laikas: 6,62514s->6,5674s
-
-1000000 įrašų nuskaitymo, rezultatų suskaičiavimo, surūšiavimo ir išvedimo laikas: 10,8141s->10,9008s
-
-Failo iš 10000000 įrašų sūkurimo laikas: 65,5402s->65,4218s
-
-10000000 įrašų nuskaitymo, rezultatų suskaičiavimo, surūšiavimo ir išvedimo laikas: 104,69s->106,398s
+| Įrašų kiekis | Skaitymas | Skirstymas |
+|:------------ |:--------- |:---------- |
+|1000          |0,015646   |0           |
+|10000         |0,109349   |0,015621    |
+|100000        |1,29657    |0,156214    |
+|1000000       |11,7854    |1,52688     |
+|10000000      |Neužteko atminties      |
 
 
