@@ -1,26 +1,61 @@
 # Studentai
 
-v0.1 versija
+# v0.1
 
 Ši versija skaičiuoja vidurkį arba medianą pagal įvestus duomenis arba atsitiktinius duomenis
 
-v0.2 versija
+# v0.2 
 
 Ši versija leidžia pasirinkti jei norite skaityti duomenis iš failo
 
-v0.3 versija
+# v0.3
 
 Šioje dalyje yra naudojamas header failas ir papildomas cpp failas funkcijom
 
-v0.4 versija
-
+# V0.4 
 Ši programos versija gali sukurti studentų duomenų failą, šio failo įrašų ir namų darbu kiekį gali pasirinkti vartotojas. Taip pat programa surušiuoja studentus į dvi kategorijas pagal vidurkius: liūdesėliai - studentai kurių galutinis balas yra mažiau nei penki, neliūdesėliai - studentai, kurių galutinis balas yra penki arba daugiau.
 
-v0.5 versija
+## Spartos testai
 
-Šioje versijoje buvo atlikti spartos testai naudojant deque vietoj vector
+| Įrašų kiekis | Generavimas | Skaitymas | Skirstymas | Išvedimas į failus |
+|:------------ |:----------- |:--------- |:---------- |:------------------ |
+|1000          |0,031293     |0          |0           |0,031279            |
+|10000         |0,062134     |0,124969   |0,015622    |0,374913            |
+|100000        |0,581268     |1,17809    |0,096717    |4,60792             |
+|1000000       |5,93027      |11,3972    |0,955045    |53,2831             |
+|10000000      |Neužteko atminties                                         |
 
-v1.0 versija
+# V0.5
+
+CPU: intel core i5-8250u cpu @ 1.60Hz
+
+Ram: 8 gb
+
+SSD
+
+# Spartos testai:
+
+Vector:
+
+| Įrašų kiekis | Skaitymas | Skirstymas |
+|:------------ |:--------- |:---------- |
+|1000          |0,015622   |0           |
+|10000         |0,125018   |0,015621    |
+|100000        |1,24181    |0,09373     |
+|1000000       |11,8399    |0,95294     |
+|10000000      |Neužteko atminties      |
+
+Deque:
+
+| Įrašų kiekis | Skaitymas | Skirstymas |
+|:------------ |:--------- |:---------- |
+|1000          |0,015646   |0           |
+|10000         |0,109349   |0,015621    |
+|100000        |1,29657    |0,156214    |
+|1000000       |11,7854    |1,52688     |
+|10000000      |Neužteko atminties      |
+
+# v1.0 
 
 Optimizuoti studentų rūšiavimo būdai ir padaryti spartos testai
 
