@@ -1,4 +1,4 @@
-# spartos matavimas naudojant deque vietoj vector
+# V0.5
 
 CPU: intel core i5-8250u cpu @ 1.60Hz
 
