@@ -78,6 +78,9 @@ Deque:
 
 Optimizuoti studentų skirstymo būdai ir padaryti spartos testai
 
+- Pirma strategija yra studentų rūšiavimas į du naujus vektorius
+- Antra strategija yra studentų rūšiavimas į vieną naują vektorių, t.y. studentai, kurių galutinis balas yra mažiau nei penki, yra perkeliami į naują vektorių "liūdesėliai", o likę studentai lieka "studentai" vektoryje
+- Trečia strategija yra tokia pati kaip ir pirma, tik yra naudojami remove_copy_if ir copy_if algoritmai
 
 | Įrašų kiekis | 1/vector | 1/deque | 3/vector  | 3/deque |
 |:------------ |:---------|:------- |:----------|:--------|
@@ -86,4 +89,5 @@ Optimizuoti studentų skirstymo būdai ir padaryti spartos testai
 |1000000       |11,8399   |0,95294  |0,977357   |1,481    |
 
 Naudojant antrą strategiją programos vykdymo laikas labai išaugo arba net nebaigė vykdymo.
+Trečia strategija yra greičiausia jei naudojama su vektoriais, o naudojant deque, pirma strategija yra greitesnė
 
