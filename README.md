@@ -1,5 +1,24 @@
 # Studentai
 
+## Įdiegimo instrukcija
+
+- Parsisiųsti naujausią programos versiją iš "releases" skilties
+- Parsisiųsti Codeblocks IDE ir atsidaryti .cbp failą
+
+Arba
+
+- Parsisiųsti naujausią programos versiją iš "releases" skilties
+- Parsisiųsti ir įsidiegti c++ kompiliatorių
+- Atsidaryti terminalą ir suvesti failo vietą diske
+- Įveskite komandą make
+- Paleiskite programą su komanda ./make
+
+## Naudojimo instrukcija
+
+- Įveskite 0 jei norite naudoti namų darbų vidurkį skaičiavimuose arba 1 jei norite naudoti medianą
+- Įveskite studentų(įrašų) skaičių, programa tada sukurs duomenų failą su tiek studentų irašų
+- Įveskite namų darbų kiekį, t.y. kiek namų darbų tenka kiekvienam studentui
+
 # v0.1
 
 Ši versija skaičiuoja vidurkį arba medianą pagal įvestus duomenis arba atsitiktinius duomenis
@@ -57,51 +76,14 @@ Deque:
 
 # v1.0 
 
-Optimizuoti studentų rūšiavimo būdai ir padaryti spartos testai
+Optimizuoti studentų skirstymo būdai ir padaryti spartos testai
 
-1 būdas:
-vector:
-failo iš 1000 įrašų nuskaitymo laikas: 0s
-1000 studentų suskirstymo laikas: 0,266852 s
 
-failo iš 5000 įrašų nuskaitymo laikas:0,04s
-5000 studentų suskirstymo laikas:7,12821s
+| Įrašų kiekis | 1/vector | 1/deque | 3/vector  | 3/deque |
+|:------------ |:---------|:------- |:----------|:--------|
+|10000         |0,125018  |0,015621 |0,009963   |0,01496  |
+|100000        |1,24181   |0,09373  |0,090817   |0,142803 |
+|1000000       |11,8399   |0,95294  |0,977357   |1,481    |
 
-failo iš 10000 įrašų nuskaitymo laikas:0,09s
-10000 studentų suskirstymo laikas:31,7606s
-
-deque:
-failo iš 1000 įrašų nuskaitymo laikas: 0,01s
-1000 studentų suskirstymo laikas: 0,359252 s
-
-failo iš 5000 įrašų nuskaitymo laikas:0,0468s
-5000 studentų suskirstymo laikas:9,6220s
-
-failo iš 10000 įrašų nuskaitymo laikas:0,09373s
-10000 studentų suskirstymo laikas:40,0684s
-
-2 būdas:
-vector:
-failo iš 1000 įrašų nuskaitymo laikas: 0,009s
-1000 studentų suskirstymo laikas: 0,266852 s
-
-failo iš 5000 įrašų nuskaitymo laikas:0,04s
-5000 studentų suskirstymo laikas:5,41318s
-
-failo iš 10000 įrašų nuskaitymo laikas:0,09s
-10000 studentų suskirstymo laikas:24,3311s
-
-deque:
-failo iš 1000 įrašų nuskaitymo laikas: 0.01s
-1000 studentų suskirstymo laikas: 0,266348 s
-
-failo iš 5000 įrašų nuskaitymo laikas:0,0468s
-5000 studentų suskirstymo laikas:7,77119s
-
-failo iš 10000 įrašų nuskaitymo laikas:0,09373s
-10000 studentų suskirstymo laikas:28,2255s
-
-Naudojimosi instrukcija:
-
-Paleidus programą įrašyti 0 jei norite naudoti vidurkį skaičiavimuose arba 1 jei norite naudoti medianą skaičiavimuose, tada įrašyti studentų įrašų skaičių, po to namų darbų kiekį.
+Naudojant antrą strategiją programos vykdymo laikas labai išaugo arba net nebaigė vykdymo.
 
