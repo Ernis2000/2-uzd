@@ -11,7 +11,7 @@ Arba
 - Parsisiųsti ir įsidiegti c++ kompiliatorių
 - Atsidaryti terminalą ir suvesti failo vietą diske
 - Įveskite komandą make
-- Paleiskite programą su komanda ./make
+- Paleiskite programą su komanda ./main
 
 ## Naudojimo instrukcija
 
